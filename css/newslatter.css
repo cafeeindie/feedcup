@@ -21,6 +21,36 @@
 	text-shadow:2px 1px 4px rgba(191,191,191,0.3);
 }
 
+form input:nth-child(1){
+	width:calc(100% - 145.08px);
+	height:50px;
+	border:none;
+	border-radius:2px;
+	padding:0 1em;
+	font-family:font-family:TTHoves-Bold;
+	font-size:small;
+}
+
+form input:nth-child(1):focus{
+	outline:none;
+}
+
+form input:nth-child(2){
+	min-width:130px;
+	height:50px;
+	border:none;
+	border-radius:2px;
+	padding:0 1em;
+	margin-left:10px;
+	font-family:TTHoves-Bold;
+	text-transform:uppercase;
+	font-size:small;
+}
+
+form input:nth-child(2):focus{
+	outline:none;
+}
+
 @media(min-width:402px){
 	.newslatter-area h1{
 		font-size:50px;
