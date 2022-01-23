@@ -23,7 +23,11 @@
 
 form{
 	width:100%;
-	border:1px solid pink;
+	border:1px solid blue;
+}
+
+#email{
+	width:100%;
 }
 
 @media(min-width:402px){
