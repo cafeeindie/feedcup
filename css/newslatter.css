@@ -23,7 +23,14 @@
 
 form{
 	width:100%;
-	border:1px solid orange;
+	border:1px solid pink;
+}
+
+@media(min-width:402px){
+	.newslatter-area h1{
+		font-size:50px;
+		line-height:50px;
+	}
 }
 
 @media(min-width:633px){
