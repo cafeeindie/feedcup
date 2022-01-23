@@ -21,8 +21,13 @@
 	text-shadow:2px 1px 4px rgba(191,191,191,0.3);
 }
 
+form{
+	width:100%;
+	border:1px solid lime;
+}
+
 form input:nth-child(1){
-	min-width:calc(100% - 145.08px);
+	width:calc(100% - 145.08px);
 	height:50px;
 	border:none;
 	border-radius:2px;
