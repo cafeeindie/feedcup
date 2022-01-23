@@ -23,11 +23,11 @@
 
 form{
 	width:100%;
-	border:1px solid lime;
+	border:1px solid pink;
 }
 
 form input:nth-child(1){
-	width:calc(100% - 145.08px);
+	max-width:calc(100% - 145.08px);
 	height:50px;
 	border:none;
 	border-radius:2px;
