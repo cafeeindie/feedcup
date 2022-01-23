@@ -91,6 +91,11 @@
 		min-width:980px;
 		padding:0 15px;
 	}
+
+	.newslatter-area h1,
+	.newslatter-area form{
+		max-width:682px;
+	}
 }
 
 @media(min-width:1201px){
@@ -98,5 +103,10 @@
 		max-width:1130px;
 		min-width:1130px;
 		padding:0 15px;
+	}
+
+	.newslatter-area h1,
+	.newslatter-area form{
+		max-width:801px;
 	}
 }
