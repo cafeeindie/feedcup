@@ -1,0 +1,94 @@
+.header{
+	display:flex;
+	justify-content:center;
+	min-width:100%;
+	max-width:100%;
+	min-height:478px;
+	max-height:100%;
+	background-image:url('https://www.musebr.com/wp-content/uploads/2021/05/oosxx-banner-home.jpg');
+	background-size:cover;
+	background-position:center;
+	box-sizing:border-box;
+}
+
+.header-area{
+	max-width:600px;
+	padding-top:103px;
+	padding-bottom:180px;
+}
+
+.header-area h1{
+	font-size:48px;
+	line-height:48px;
+	font-family:'Barlow Condensed';
+	color:white;
+	text-transform:uppercase;
+	padding:0 15px;
+}
+
+.header-area h1::after{
+	content:'';
+	display:flex;
+	width:66px;
+	height:4px;
+	background:white;
+	margin-top:23px;
+	margin-bottom:64px;
+}
+
+.header-area a:nth-child(2){
+	font-size:20px;
+	line-height:29px;
+	font-family:'Barlow Condensed';
+	color:black;
+	background:white;
+	padding: 12px 44px 13px;
+	text-transform:uppercase;
+	margin:0 15px;
+	font-weight:bolder;
+	transition:0.2s;
+}
+
+.header-area a:hover:nth-child(2){
+	background:rgba(0,0,0,0.1);
+	border:3px solid white;
+	padding: 12px 44px 13px;
+	color:white;
+}
+
+@media(min-width:769px){
+	.header-area{
+		max-width:900px;
+	}
+
+	.header-area h1{
+		font-size:88px;
+		line-height:88px;
+	}
+
+	.header-area h1::after{
+		margin-top:15px;
+		margin-bottom:54px;
+	}
+}
+
+@media(min-width:1025px){
+	.header-area{
+		max-width:1025px;
+	}
+
+	.header-area h1{
+		font-size:76px;
+		line-height:88px;
+		padding:0 32px;
+	}
+
+	.header-area h1::after{
+		margin-top:15px;
+		margin-bottom:64px;
+	}
+
+	.header-area a:nth-child(2){
+		margin:0 32px;
+	}
+}
