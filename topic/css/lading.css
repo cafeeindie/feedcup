@@ -1,0 +1,19 @@
+.landing-page{
+	display:flex;
+	justify-content:center;
+	min-width:100%;
+	max-width:100%;
+	min-height:99.9vw;
+	max-height:100%;
+	background-image:url('https://video-images.vice.com/topics/57a205178cb727dec7956d45/lede/1527110421056-HEADER_VICE_lgbtq.png');
+	background-size:cover;
+	background-position:center;
+	box-sizing:border-box;
+}
+
+@media(min-width:640px){
+	.landing-page{
+		min-height:640px;
+		max-height:100%;
+	}
+}

@@ -1,0 +1,264 @@
+@import url('menu.css');
+@import url('roda-pe.css');
+
+@font-face {
+  font-family:TTHoves-Regular;
+  src: url(../fonts/TTHoves-Regular.ttf);
+}
+
+html{
+  scrollbar-color:white black;
+  scrollbar-width:100px;
+}
+
+html::-webkit-scrollbar{
+  width:7px;
+  height:6px;
+  background-color:black;
+}
+
+html::-webkit-scrollbar-thumb{
+  background-color:white;
+  border-radius:1000px;
+}  src: url(../fonts/TTHoves-Regular.ttf);
+}
+
+@font-face {
+  font-family:TTHoves-Medium;
+  src: url(../fonts/TTHoves-Medium.ttf);
+}
+
+@font-face {
+  font-family:TTHoves-Bold;
+  src: url(../fonts/TTHoves-Bold.ttf);
+}
+
+@font-face {
+  font-family:TTHoves-Black;
+  src: url(../fonts/TTHoves-Black.ttf);
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	scroll-behavior:smooth;
+}
+
+a{
+	text-decoration:none;
+	color:inherit;
+	cursor:pointer;
+}
+
+li{
+	list-style:none;
+}
+
+html{
+  scrollbar-color:white black;
+  scrollbar-width:100px;
+}
+
+html::-webkit-scrollbar{
+  width:7px;
+  height:6px;
+  background-color:black;
+}
+
+html::-webkit-scrollbar-thumb{
+  background-color:white;
+  border-radius:1000px;
+}
+
+body{
+	background-color:white;
+}
+		
+.contato{
+	max-width:330px;
+	margin:0 auto;
+	padding-left:15px;
+	padding-right:15px;
+	padding-bottom:132px;
+}
+		
+.contato h1{
+	font-family:Barlow Condensed;
+	font-size:62px;
+	line-height:62px;
+	text-transform:uppercase;
+	margin-top:83px;
+	margin-bottom:239px;
+}
+
+.contato h2{
+	font-family:Barlow Condensed;
+	font-size:40px;
+	line-height:42px;
+	text-transform:uppercase;
+	margin:0 auto;
+}
+
+.contato h2::after{
+	content:'';
+	display:flex;
+	width:66px;
+	height:4px;
+	background:black;
+	margin-top:21px;
+	margin-bottom:23px;
+}
+
+.contato p{
+	font-family:TTHoves-Regular;
+	font-size:17px;
+	line-height:38px;
+	margin:0 auto;
+}
+
+.contato p a{
+	text-decoration:underline;	
+}
+
+.contato span{
+	display:flex;
+	justify-content:flex-start;
+	margin-top:2em;
+}
+
+.contato span a{
+	transition:0.4s;
+}
+
+.contato span a:nth-child(2){
+	margin:0 2em;
+}
+
+.contato span a:hover:nth-child(1){
+	color:#395694;
+}
+
+.contato span a:hover:nth-child(2){
+	background: #5056C5;
+	background: -webkit-linear-gradient(to right, #5056C5 0%, #E432AD 50%, #f7a347 100%);
+	background: -moz-linear-gradient(to right, #5056C5 0%, #E432AD 50%, #f7a347 100%);
+	background: linear-gradient(to right, #5056C5 0%, #E432AD 50%, #f7a347 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.contato span a:hover:nth-child(3){
+	color:#f74300;
+}
+
+.contato span a i{
+	font-size:xx-large;
+}
+
+
+/* 481 */
+@media(min-width:481px){
+	.contato{
+		max-width:450px;
+	}
+}
+
+/* 681 */
+@media(min-width:681px){
+	.contato{
+		max-width:630px;
+	}
+}
+
+/* 769 */
+@media(min-width:769px){
+	.contato{
+		max-width:768px;
+	}
+}
+
+/* 1025 */
+@media(min-width:1025px){
+	.contato{
+		max-width:980px;
+	}
+
+	.contato h2{
+		font-size:50px;
+		line-height:53px;
+	}
+
+	.contato p{
+		font-size:17px;
+		line-height:26px;
+	}
+}
+
+/* 1201 */
+@media(min-width:1201px){
+	.contato{
+		max-width:1130px;
+	}
+}
+
+/* Carregamento Home Page */
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:black; /* cor do background que vai ocupar o body */
+    z-index:999; /* z-index para jogar para frente e sobrepor tudo */
+}
+#preloader .inner {
+    position: absolute;
+    top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+.bolas > div {
+  display: inline-block;
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  margin: 3px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: animarBola;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+   
+}
+.bolas > div:nth-child(1) {
+    animation-duration:0.75s ;
+    animation-delay: 0;
+}
+.bolas > div:nth-child(2) {
+    animation-duration: 0.75s ;
+    animation-delay: 0.12s;
+}
+.bolas > div:nth-child(3) {
+    animation-duration: 0.75s  ;
+    animation-delay: 0.24s;
+}
+ 
+@keyframes animarBola {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  16% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 0.7;
+  }
+  33% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; 
+  } 
+}

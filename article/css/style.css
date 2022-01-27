@@ -1,0 +1,53 @@
+@import url('../../css/menu.css');
+@import url('post.css');
+@import url('../../css/roda-pe.css');
+
+@font-face {
+  font-family:TTHoves-Light;
+  src: url(../../fonts/TTHoves-Light.ttf);
+}
+
+@font-face {
+  font-family:TTHoves-Regular;
+  src: url(../../fonts/TTHoves-Regular.ttf);
+}
+
+@font-face {
+  font-family:TTHoves-Medium;
+  src: url(../../fonts/TTHoves-Medium.ttf);
+}
+
+@font-face {
+  font-family:TTHoves-Bold;
+  src: url(../../fonts/TTHoves-Bold.ttf);
+}
+
+@font-face {
+  font-family:TTHoves-Black;
+  src: url(../../fonts/TTHoves-Black.ttf);
+}
+
+@font-face {
+  font-family:Lora-Regular;
+  src: url(../../fonts/Lora-Regular.ttf);
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+a{
+	text-decoration:none;
+	color:inherit;
+	cursor:pointer;
+}
+
+li{
+	list-style:none;
+}
+
+body{
+	background-color:white;
+}

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Feed-Cup | Sexo</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" type="image/png" href="../img/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<!-- início do preloader -->
+	<div id="preloader">
+		<div class="inner">
+			<img src="../img/cup-loading.gif" width="85px">
+		</div>
+	</div>
+	
+	<!-- Menu -->
+	<nav class="menu">
+		<nav class="menu-area">
+			<div class="menu-sanduiche">
+				<div class="ms-area" onclick="abrirMenu()">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			
+			<div class="menu-logo">
+				<a href="index.html"><img src="https://i.imgur.com/MPsPfpO.png" class="logo-menu"></a>
+			</div>
+
+			<div class="menu-links">
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li>	Assuntos
+						<ul>
+							<section class="m-bloco">
+								<section class="m-bloco-area">
+									<div class="ba-bloc">
+										<a href="comportamentos.html"><img src="https://i.imgur.com/kQrZAxv.png"></a>
+										<h1><a href="comportamentos.html">Comportamentos</a></h1>
+									</div>
+
+									<div class="ba-bloc">
+										<a href="drogas.html"><img src="https://i.imgur.com/kQrZAxv.png"></a>
+										<h1><a href="drogas.html">Drogas</a></h1>
+									</div>
+
+									<div class="ba-bloc">
+										<a href="filmes-series.html"><img src="https://i.imgur.com/kQrZAxv.png"></a>
+										<h1><a href="filmes-series.html">Filmes e Séries</a></h1>
+									</div>
+
+									<div class="ba-bloc">
+										<a href="games.html"><img src="https://i.imgur.com/kQrZAxv.png"></a>
+										<h1><a href="games.html">Games</a></h1>
+									</div>
+
+									<div class="ba-bloc">
+										<a href="historia.html"><img src="https://i.imgur.com/kQrZAxv.png"></a>
+										<h1><a href="historia.html">Historía</a></h1>
+									</div>
+
+									<div class="ba-bloc">
+										<a href="lgbtqi+.html"><img src="https://i.imgur.com/kQrZAxv.png"></a>
+										<h1><a href="lgbtqi+.html">LGBTQI+</a></h1>
+									</div>
+
+									<div class="ba-bloc">
+										<a href="nsfw.html"><img src="https://i.imgur.com/kQrZAxv.png"></a>
+										<h1><a href="nsfw.html">NSFW</a></h1>
+									</div>
+
+									<div class="ba-bloc">
+										<a href="musica.html"><img src="https://i.imgur.com/kQrZAxv.png"></a>
+										<h1><a href="musica.html">Música</a></h1>
+									</div>
+
+									<div class="ba-bloc">
+										<a href="politica.html"><img src="https://i.imgur.com/kQrZAxv.png"></a>
+										<h1><a href="politica.html">Política</a></h1>
+									</div>
+
+									<div class="ba-bloc">
+										<a href="sexo.html"><img src="https://i.imgur.com/kQrZAxv.png"></a>
+										<h1><a href="sexo.html">Sexo</a></h1>
+									</div>
+
+									<div class="ba-bloc">
+										<a href="terror-sobrenatural.html"><img src="https://i.imgur.com/kQrZAxv.png"></a>
+										<h1><a href="terror-sobrenatural.html">Terror e Sobrenatural</a></h1>
+									</div>
+
+									<div class="ba-bloc">
+										<a href="true-crime.html"><img src="https://i.imgur.com/kQrZAxv.png"></a>
+										<h1><a href="true-crime.html">True Crime</a></h1>
+									</div>
+								</section>
+							</section>
+						</ul>
+					</li>
+					<li><a href="../entrevista.html">Entrevistas</a></li>
+					<li><a href="../resenha.html">Resenha</a></li>
+					<li><a href="../contatos.html">Contato</a></li>
+					<a href=""><i class="fas fa-search"></i></a>
+				</ul>
+			</div>
+		</nav>
+	</nav>
+
+	<!-- Menu Lateral -->
+	<nav id="menu-lateral">
+		<div class="ml-close">
+			<span onclick="feharMenu()"><p>X</p></span>
+		</div>	
+
+		<div class="ml-links">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li>Assuntos
+					<ul>
+						<li><a href="topic/comportamentos.html">Comportamentos</a></li>
+						<li><a href="topic/drogas.html">Drogas</a></li>
+						<li><a href="topic/filmes-series.html">Filmes e Séries</a></li>
+						<li><a href="topic/games.html">Games</a></li>
+						<li><a href="topic/historia.html">Historía</a></li>
+						<li><a href="topic/lgbtqi+.html">LGBTQI+</a></li>
+						<li><a href="topic/nsfw.html">NSFW</a></li>
+						<li><a href="topic/musica.html">Música</a></li>
+						<li><a href="topic/politica.html">Política</a></li>
+						<li><a href="topic/sexo.html">Sexo</a></li>
+						<li><a href="topic/terror-sobrenatural.html">Terror e Sobrenatural</a></li>
+						<li><a href="topic/true-crime.html">True Crime</a></li>
+					</ul>
+				</li>
+				<li><a href="entrevista.html">Entrevistas</a></li>
+				<li><a href="resenha.html">Resenha</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="contatos.html">Contato</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+	<!-- Lading Page -->
+	<header class="landing-page"></header>
+
+	<!-- Feed -->
+	<div class="title-feed">
+		<div class="title-feed-area">
+			<h1>Sexo</h1>
+		</div>
+	</div>
+
+	<main class="feed-main">
+		<section class="feed">
+			<section class="feed-bloco">
+				<figure>
+					<a href=""><img src="https://1.bp.blogspot.com/-NFhuMabUArM/YKRNmuTcnBI/AAAAAAAAAx8/YoIgfWwh-gocI7TNJaUZ4FQWpLUnFj6RwCLcBGAsYHQ/w680/Sem%2BT%25C3%25ADtulo-5.jpg"></a>
+					<a href="" class="tag">Musica</a>
+				</figure>
+				<h1>RETROSPECTIVA: Aniversários da Melanie Martinez</h1>
+				<p>Mas que dia lindo, sente esse clima agradável? Podemos pôr no nosso calendário …</p>
+				<span class="feed-data-autor">
+					<i class="fas fa-user"></i>
+					<a href="">@nelson_marqs</a>
+					<i class="far fa-clock"></i>
+					<a href="">Janeiro 07, 2022</a>
+				</span>
+			</section>
+
+			<section class="feed-bloco">
+				<figure>
+					<a href=""><img src="https://1.bp.blogspot.com/-NFhuMabUArM/YKRNmuTcnBI/AAAAAAAAAx8/YoIgfWwh-gocI7TNJaUZ4FQWpLUnFj6RwCLcBGAsYHQ/w680/Sem%2BT%25C3%25ADtulo-5.jpg"></a>
+					<a href="" class="tag">Musica</a>
+				</figure>
+				<h1>RETROSPECTIVA: Aniversários da Melanie Martinez</h1>
+				<p>Mas que dia lindo, sente esse clima agradável? Podemos pôr no nosso calendário …</p>
+				<span class="feed-data-autor">
+					<i class="fas fa-user"></i>
+					<a href="">@nelson_marqs</a>
+					<i class="far fa-clock"></i>
+					<a href="">Janeiro 07, 2022</a>
+				</span>
+			</section>
+
+			<section class="feed-bloco">
+				<figure>
+					<a href=""><img src="https://1.bp.blogspot.com/-NFhuMabUArM/YKRNmuTcnBI/AAAAAAAAAx8/YoIgfWwh-gocI7TNJaUZ4FQWpLUnFj6RwCLcBGAsYHQ/w680/Sem%2BT%25C3%25ADtulo-5.jpg"></a>
+					<a href="" class="tag">Musica</a>
+				</figure>
+				<h1>RETROSPECTIVA: Aniversários da Melanie Martinez</h1>
+				<p>Mas que dia lindo, sente esse clima agradável? Podemos pôr no nosso calendário …</p>
+				<span class="feed-data-autor">
+					<i class="fas fa-user"></i>
+					<a href="">@nelson_marqs</a>
+					<i class="far fa-clock"></i>
+					<a href="">Janeiro 07, 2022</a>
+				</span>
+			</section>
+
+			<section class="feed-bloco">
+				<figure>
+					<a href=""><img src="https://1.bp.blogspot.com/-NFhuMabUArM/YKRNmuTcnBI/AAAAAAAAAx8/YoIgfWwh-gocI7TNJaUZ4FQWpLUnFj6RwCLcBGAsYHQ/w680/Sem%2BT%25C3%25ADtulo-5.jpg"></a>
+					<a href="" class="tag">Musica</a>
+				</figure>
+				<h1>RETROSPECTIVA: Aniversários da Melanie Martinez</h1>
+				<p>Mas que dia lindo, sente esse clima agradável? Podemos pôr no nosso calendário …</p>
+				<span class="feed-data-autor">
+					<i class="fas fa-user"></i>
+					<a href="">@nelson_marqs</a>
+					<i class="far fa-clock"></i>
+					<a href="">Janeiro 07, 2022</a>
+				</span>
+			</section>
+
+			<section class="feed-bloco">
+				<figure>
+					<a href=""><img src="https://1.bp.blogspot.com/-NFhuMabUArM/YKRNmuTcnBI/AAAAAAAAAx8/YoIgfWwh-gocI7TNJaUZ4FQWpLUnFj6RwCLcBGAsYHQ/w680/Sem%2BT%25C3%25ADtulo-5.jpg"></a>
+					<a href="" class="tag">Musica</a>
+				</figure>
+				<h1>RETROSPECTIVA: Aniversários da Melanie Martinez</h1>
+				<p>Mas que dia lindo, sente esse clima agradável? Podemos pôr no nosso calendário …</p>
+				<span class="feed-data-autor">
+					<i class="fas fa-user"></i>
+					<a href="">@nelson_marqs</a>
+					<i class="far fa-clock"></i>
+					<a href="">Janeiro 07, 2022</a>
+				</span>
+			</section>
+
+			<section class="feed-bloco">
+				<figure>
+					<a href=""><img src="https://1.bp.blogspot.com/-NFhuMabUArM/YKRNmuTcnBI/AAAAAAAAAx8/YoIgfWwh-gocI7TNJaUZ4FQWpLUnFj6RwCLcBGAsYHQ/w680/Sem%2BT%25C3%25ADtulo-5.jpg"></a>
+					<a href="" class="tag">Musica</a>
+				</figure>
+				<h1>RETROSPECTIVA: Aniversários da Melanie Martinez</h1>
+				<p>Mas que dia lindo, sente esse clima agradável? Podemos pôr no nosso calendário …</p>
+				<span class="feed-data-autor">
+					<i class="fas fa-user"></i>
+					<a href="">@nelson_marqs</a>
+					<i class="far fa-clock"></i>
+					<a href="">Janeiro 07, 2022</a>
+				</span>
+			</section>
+
+			<section class="feed-bloco">
+				<figure>
+					<a href=""><img src="https://1.bp.blogspot.com/-NFhuMabUArM/YKRNmuTcnBI/AAAAAAAAAx8/YoIgfWwh-gocI7TNJaUZ4FQWpLUnFj6RwCLcBGAsYHQ/w680/Sem%2BT%25C3%25ADtulo-5.jpg"></a>
+					<a href="" class="tag">Musica</a>
+				</figure>
+				<h1>RETROSPECTIVA: Aniversários da Melanie Martinez</h1>
+				<p>Mas que dia lindo, sente esse clima agradável? Podemos pôr no nosso calendário …</p>
+				<span class="feed-data-autor">
+					<i class="fas fa-user"></i>
+					<a href="">@nelson_marqs</a>
+					<i class="far fa-clock"></i>
+					<a href="">Janeiro 07, 2022</a>
+				</span>
+			</section>
+
+			<section class="feed-bloco">
+				<figure>
+					<a href=""><img src="https://1.bp.blogspot.com/-NFhuMabUArM/YKRNmuTcnBI/AAAAAAAAAx8/YoIgfWwh-gocI7TNJaUZ4FQWpLUnFj6RwCLcBGAsYHQ/w680/Sem%2BT%25C3%25ADtulo-5.jpg"></a>
+					<a href="" class="tag">Musica</a>
+				</figure>
+				<h1>RETROSPECTIVA: Aniversários da Melanie Martinez</h1>
+				<p>Mas que dia lindo, sente esse clima agradável? Podemos pôr no nosso calendário …</p>
+				<span class="feed-data-autor">
+					<i class="fas fa-user"></i>
+					<a href="">@nelson_marqs</a>
+					<i class="far fa-clock"></i>
+					<a href="">Janeiro 07, 2022</a>
+				</span>
+			</section>
+
+			<section class="feed-bloco">
+				<figure>
+					<a href=""><img src="https://1.bp.blogspot.com/-NFhuMabUArM/YKRNmuTcnBI/AAAAAAAAAx8/YoIgfWwh-gocI7TNJaUZ4FQWpLUnFj6RwCLcBGAsYHQ/w680/Sem%2BT%25C3%25ADtulo-5.jpg"></a>
+					<a href="" class="tag">Musica</a>
+				</figure>
+				<h1>RETROSPECTIVA: Aniversários da Melanie Martinez</h1>
+				<p>Mas que dia lindo, sente esse clima agradável? Podemos pôr no nosso calendário …</p>
+				<span class="feed-data-autor">
+					<i class="fas fa-user"></i>
+					<a href="">@nelson_marqs</a>
+					<i class="far fa-clock"></i>
+					<a href="">Janeiro 07, 2022</a>
+				</span>
+			</section>
+
+			<section class="feed-bloco">
+				<figure>
+					<a href=""><img src="https://1.bp.blogspot.com/-NFhuMabUArM/YKRNmuTcnBI/AAAAAAAAAx8/YoIgfWwh-gocI7TNJaUZ4FQWpLUnFj6RwCLcBGAsYHQ/w680/Sem%2BT%25C3%25ADtulo-5.jpg"></a>
+					<a href="" class="tag">Musica</a>
+				</figure>
+				<h1>RETROSPECTIVA: Aniversários da Melanie Martinez</h1>
+				<p>Mas que dia lindo, sente esse clima agradável? Podemos pôr no nosso calendário …</p>
+				<span class="feed-data-autor">
+					<i class="fas fa-user"></i>
+					<a href="">@nelson_marqs</a>
+					<i class="far fa-clock"></i>
+					<a href="">Janeiro 07, 2022</a>
+				</span>
+			</section>
+
+			<section class="feed-bloco">
+				<figure>
+					<a href=""><img src="https://1.bp.blogspot.com/-NFhuMabUArM/YKRNmuTcnBI/AAAAAAAAAx8/YoIgfWwh-gocI7TNJaUZ4FQWpLUnFj6RwCLcBGAsYHQ/w680/Sem%2BT%25C3%25ADtulo-5.jpg"></a>
+					<a href="" class="tag">Musica</a>
+				</figure>
+				<h1>RETROSPECTIVA: Aniversários da Melanie Martinez</h1>
+				<p>Mas que dia lindo, sente esse clima agradável? Podemos pôr no nosso calendário …</p>
+				<span class="feed-data-autor">
+					<i class="fas fa-user"></i>
+					<a href="">@nelson_marqs</a>
+					<i class="far fa-clock"></i>
+					<a href="">Janeiro 07, 2022</a>
+				</span>
+			</section>
+
+			<section class="feed-bloco">
+				<figure>
+					<a href=""><img src="https://1.bp.blogspot.com/-NFhuMabUArM/YKRNmuTcnBI/AAAAAAAAAx8/YoIgfWwh-gocI7TNJaUZ4FQWpLUnFj6RwCLcBGAsYHQ/w680/Sem%2BT%25C3%25ADtulo-5.jpg"></a>
+					<a href="" class="tag">Musica</a>
+				</figure>
+				<h1>RETROSPECTIVA: Aniversários da Melanie Martinez</h1>
+				<p>Mas que dia lindo, sente esse clima agradável? Podemos pôr no nosso calendário …</p>
+				<span class="feed-data-autor">
+					<i class="fas fa-user"></i>
+					<a href="">@nelson_marqs</a>
+					<i class="far fa-clock"></i>
+					<a href="">Janeiro 07, 2022</a>
+				</span>
+			</section>
+
+			<section class="feed-bloco">
+				<figure>
+					<a href=""><img src="https://1.bp.blogspot.com/-NFhuMabUArM/YKRNmuTcnBI/AAAAAAAAAx8/YoIgfWwh-gocI7TNJaUZ4FQWpLUnFj6RwCLcBGAsYHQ/w680/Sem%2BT%25C3%25ADtulo-5.jpg"></a>
+					<a href="" class="tag">Musica</a>
+				</figure>
+				<h1>RETROSPECTIVA: Aniversários da Melanie Martinez</h1>
+				<p>Mas que dia lindo, sente esse clima agradável? Podemos pôr no nosso calendário …</p>
+				<span class="feed-data-autor">
+					<i class="fas fa-user"></i>
+					<a href="">@nelson_marqs</a>
+					<i class="far fa-clock"></i>
+					<a href="">Janeiro 07, 2022</a>
+				</span>
+			</section>
+
+			<section class="feed-bloco">
+				<figure>
+					<a href=""><img src="https://1.bp.blogspot.com/-NFhuMabUArM/YKRNmuTcnBI/AAAAAAAAAx8/YoIgfWwh-gocI7TNJaUZ4FQWpLUnFj6RwCLcBGAsYHQ/w680/Sem%2BT%25C3%25ADtulo-5.jpg"></a>
+					<a href="" class="tag">Musica</a>
+				</figure>
+				<h1>RETROSPECTIVA: Aniversários da Melanie Martinez</h1>
+				<p>Mas que dia lindo, sente esse clima agradável? Podemos pôr no nosso calendário …</p>
+				<span class="feed-data-autor">
+					<i class="fas fa-user"></i>
+					<a href="">@nelson_marqs</a>
+					<i class="far fa-clock"></i>
+					<a href="">Janeiro 07, 2022</a>
+				</span>
+			</section>
+
+			<section class="feed-bloco">
+				<figure>
+					<a href=""><img src="https://1.bp.blogspot.com/-NFhuMabUArM/YKRNmuTcnBI/AAAAAAAAAx8/YoIgfWwh-gocI7TNJaUZ4FQWpLUnFj6RwCLcBGAsYHQ/w680/Sem%2BT%25C3%25ADtulo-5.jpg"></a>
+					<a href="" class="tag">Musica</a>
+				</figure>
+				<h1>RETROSPECTIVA: Aniversários da Melanie Martinez</h1>
+				<p>Mas que dia lindo, sente esse clima agradável? Podemos pôr no nosso calendário …</p>
+				<span class="feed-data-autor">
+					<i class="fas fa-user"></i>
+					<a href="">@nelson_marqs</a>
+					<i class="far fa-clock"></i>
+					<a href="">Janeiro 07, 2022</a>
+				</span>
+			</section>
+
+			<section class="feed-bloco">
+				<figure>
+					<a href=""><img src="https://1.bp.blogspot.com/-NFhuMabUArM/YKRNmuTcnBI/AAAAAAAAAx8/YoIgfWwh-gocI7TNJaUZ4FQWpLUnFj6RwCLcBGAsYHQ/w680/Sem%2BT%25C3%25ADtulo-5.jpg"></a>
+					<a href="" class="tag">Musica</a>
+				</figure>
+				<h1>RETROSPECTIVA: Aniversários da Melanie Martinez</h1>
+				<p>Mas que dia lindo, sente esse clima agradável? Podemos pôr no nosso calendário …</p>
+				<span class="feed-data-autor">
+					<i class="fas fa-user"></i>
+					<a href="">@nelson_marqs</a>
+					<i class="far fa-clock"></i>
+					<a href="">Janeiro 07, 2022</a>
+				</span>
+			</section>
+		</section>
+
+		<aside class="lateral">
+			<aside class="lateral-area">
+				
+			</aside>
+		</aside>	
+	</main>
+	
+	<div class="feed-vermais">
+		<div class="feed-vermais-area">
+			<a id="loadMore" href="">Ver Mais</a>
+		</div>
+	</div>
+
+	<!-- Roda Pé -->
+	<footer class="roda-pe">
+		<footer class="roda-pe-area">
+			<figure class="roda-pe-logo">
+				<a href="../index.html"><img src="https://i.imgur.com/YzYBcQt.png"></a>
+			</figure>
+			
+			<span class="roda-pe-social">
+				<a href=""><i class="fab fa-facebook-square"></i></a>
+				<a href=""><i class="fab fa-instagram"></i></a>
+				<a href=""><i class="fab fa-reddit-alien"></i></a>
+			</span>
+
+			<ul class="roda-pe-links">
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="../entrevista.html">Entrevista</a></li>
+				<li><a href="musica.html">Musica</a></li>
+				<li><a href="politica.html">Política</a></li>
+				<li><a href="comportamentos.html">Comportamento</a></li>
+				<li><a href="../resenha.html">Resenha</a></li>
+				<li><a href="../sobre.html">Sobre</a></li>
+				<li><a href="../contatos.html">Contato</a></li>
+			</ul>
+
+			<div class="roda-pe-copy">
+				<p> © 2022 FeedCup | Política de privacidade - Desenvolvido por: <a href="">Nelson Marques</a></p>
+			</div>
+		</footer>
+	</footer>
+
+	<script type="text/javascript">
+		//Menu Lateral
+		function abrirMenu(){
+			document.getElementById('menu-lateral').style.width = '100%';
+		}
+
+		function feharMenu(){
+			document.getElementById('menu-lateral').style.width = '0px';
+		}
+
+		//Menu Logo
+		$(window).scroll(function() { 
+		    var scroll = $(window).scrollTop();
+		 
+		    if (scroll > 570) {
+		        $('.logo-menu').addClass('logo-menu-2');
+		    } else {
+		        $('.logo-menu').removeClass('logo-menu-2');
+		    }
+		});
+
+		//Menu border
+		$(window).scroll(function() { 
+		    var scroll = $(window).scrollTop();
+		 
+		    if (scroll > 570) {
+		        $('.menu').addClass('menu-2');
+		    } else {
+		        $('.menu').removeClass('menu-2');
+		    }
+		});
+
+		//Menu Drop
+		$(window).scroll(function() { 
+		    var scroll = $(window).scrollTop();
+		 
+		    if (scroll > 570) {
+		        $('.m-bloco').addClass('m-bloco-2');
+		    } else {
+		        $('.m-bloco').removeClass('m-bloco-2');
+		    }
+		});
+
+		//Load More
+		$(document).ready(function(){
+		  $(".feed-bloco").slice(0, 8).show();
+		  $("#loadMore").on("click", function(e){
+		    e.preventDefault();
+		    $(".feed-bloco:hidden").slice(0, 4).slideDown();
+		    if($(".feed-bloco:hidden").length == 0) {
+		      $("#loadMore").text("Sem conteúdos").addClass("noContent");
+		    }
+		  });
+		  
+		})
+
+		//Parallax
+		$(window).scroll(function(){
+		    $(".landing-page").css("background-position","50% " + ($(this).scrollTop() / 5) + "px");
+		});
+
+		 $('#right-button').click(function() {
+		      event.preventDefault();
+		      $('#content').animate({
+		        scrollLeft: "+=600px"
+		      }, "slow");
+		   });
+		   
+		     $('#left-button').click(function() {
+		      event.preventDefault();
+		      $('#content').animate({
+		        scrollLeft: "-=600px"
+		      }, "slow");
+		   });
+
+		//Pre Loading
+  		$(window).on('load', function () {
+    		$('#preloader .inner').fadeOut();
+    		$('#preloader').delay(10).fadeOut('slow'); 
+    		$('body').delay(10).css({'overflow': 'visible'});
+  		})     
+	</script>
+</body>
+</html>

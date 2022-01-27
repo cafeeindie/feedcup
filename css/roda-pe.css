@@ -1,0 +1,68 @@
+.roda-pe{
+	background-color:black;
+	color:white;
+}
+
+.roda-pe-area{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	padding:115px 13px;
+}
+		
+.roda-pe-logo a img{
+	width:120px;
+}
+
+.roda-pe-social{
+	margin-top:2.1em;
+}
+
+.roda-pe-social a:nth-child(2){
+	margin:0 0.65em;
+}
+
+.roda-pe-social a i{
+	font-size:25px;
+}
+
+.roda-pe-links{
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+	margin-top:2.11em;
+	font-family:TTHoves-Medium;
+}
+		
+.roda-pe-links li{
+	margin-right:0.5em;
+}
+
+.roda-pe-links li::after{
+	content:'|';
+	margin-left:0.5em;
+}
+
+.roda-pe-links li:last-child:after{
+	content:'';
+}
+
+.roda-pe-links li a{
+	font-size:17px;
+	line-height:20px;
+}
+		
+.roda-pe-copy{
+	margin-top:2.57em;
+}
+		
+.roda-pe-copy p{
+	text-align:center;
+	font-size:10px;
+	line-height:12px;
+	font-family:TTHoves-Regular;
+}
+
+.roda-pe-copy p a{
+	text-decoration:underline;
+}

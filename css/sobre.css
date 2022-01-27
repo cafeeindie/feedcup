@@ -1,0 +1,196 @@
+@import url('menu.css');
+@import url('roda-pe.css');
+
+@font-face {
+  font-family:TTHoves-Light;
+  src: url(../fonts/TTHoves-Light.ttf);
+}
+
+@font-face {
+  font-family:TTHoves-Regular;
+  src: url(../fonts/TTHoves-Regular.ttf);
+}
+
+@font-face {
+  font-family:TTHoves-Medium;
+  src: url(../fonts/TTHoves-Medium.ttf);
+}
+
+@font-face {
+  font-family:TTHoves-Bold;
+  src: url(../fonts/TTHoves-Bold.ttf);
+}
+
+@font-face {
+  font-family:TTHoves-Black;
+  src: url(../fonts/TTHoves-Black.ttf);
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	scroll-behavior:smooth;
+}
+
+a{
+	text-decoration:none;
+	color:inherit;
+	cursor:pointer;
+}
+
+li{
+	list-style:none;
+}
+
+body{
+	background-color:white;
+  font-family:TTHoves-Regular;
+}
+.sobre-h1{
+  max-width:707px;
+  padding-left:18px;
+  margin:0 auto;
+  margin-top:50px;
+}
+
+.sobre-h1 h1{
+  font-family:Barlow Condensed;
+  font-size:62px;
+  line-height:62px;
+  text-transform:uppercase;
+}
+
+.sobre-h1 h1::after{
+  content:'';
+  display:flex;
+  width:66px;
+  height:4px;
+  background:black;
+  margin-top:21px;
+}
+
+.sobre{
+  max-width:707px;
+  margin:0 auto;
+  padding:30px 19px 50px 19px;
+}
+
+.sobre-img{
+  max-width:288px;
+  justify-content:center;
+  margin:0 auto;
+  margin-bottom:33px;
+}
+
+.sobre-img img{
+  width:100%;
+}
+
+.sobre-img a{
+  font-size:small;
+}
+
+@media(min-width:768px){
+  .sobre-h1{
+    max-width:calc(820px + -91px + 15.1vw);
+  }
+  
+  .sobre{
+    max-width:1132px;
+    display:flex;
+    justify-content:center;
+    margin:none;
+  }
+      
+  .sobre-img{
+    min-width:288px;
+    max-width:288px;
+    margin:0;
+  }
+      
+  .sobre-img img{
+    height:288px;
+  }
+
+  .sobre p{
+    max-width:532px;
+    font-size:16px;
+    line-height:27px;
+    margin-left:calc(-91px + 15.1vw);
+    transform:translateY(-4px);
+  }
+}
+
+@media(min-width:1136px){
+  .sobre p{
+    margin-left:80px;
+  }
+}
+
+@media(min-width:1201px){
+  .sobre{
+    max-width:1136px;
+  }
+}
+
+/* Carregamento Home Page */
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:black; /* cor do background que vai ocupar o body */
+    z-index:999; /* z-index para jogar para frente e sobrepor tudo */
+}
+#preloader .inner {
+    position: absolute;
+    top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+.bolas > div {
+  display: inline-block;
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  margin: 3px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: animarBola;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+   
+}
+.bolas > div:nth-child(1) {
+    animation-duration:0.75s ;
+    animation-delay: 0;
+}
+.bolas > div:nth-child(2) {
+    animation-duration: 0.75s ;
+    animation-delay: 0.12s;
+}
+.bolas > div:nth-child(3) {
+    animation-duration: 0.75s  ;
+    animation-delay: 0.24s;
+}
+ 
+@keyframes animarBola {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  16% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 0.7;
+  }
+  33% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; 
+  } 
+}
